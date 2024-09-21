@@ -1,0 +1,16 @@
+[init]
+	defaultBranch = main
+[user]
+	name = Michael Cierkowski
+	email = mcierkowski@gmail.com
+	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMD4+Gwc+/X+q5kPCNN8/uDFBac7BkpeAF+uDuG3wv2b
+[gpg]
+  format = ssh
+[gpg "ssh"]
+  program = "C:/Program Files/1Password/app/8/op-ssh-sign.exe"
+[core]
+	sshCommand = C:/Windows/System32/OpenSSH/ssh.exe
+[safe]
+	directory = C:/Users/mcier/repos/system-configuration
+[commit]
+  gpgsign = true
