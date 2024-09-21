@@ -42,6 +42,10 @@ Set-Service -Name ssh-agent -StartupType Disabled
 New-Item -ItemType SymbolicLink -Path "$env:HOMEPATH\AppData\Roaming\Elgato\StreamDeck\Audio" -Target "$PWD\config\StreamDeck\Audio" -Force
 New-Item -ItemType SymbolicLink -Path "$env:HOMEPATH\AppData\Roaming\Elgato\StreamDeck\ProfilesV2" -Target "$PWD\config\StreamDeck\ProfilesV2" -Force
 
+# Also need to install the following plugins
+# Audio Switcher
+# API Request
+
 # Install Dev Applications\Tools
 winget install --id Microsoft.PowerShell --silent
 winget install --id Microsoft.VisualStudioCode --silent
@@ -101,6 +105,3 @@ New-Item -ItemType SymbolicLink -Path "$env:APPDATA\Microsoft\Windows\Start Menu
 
 # Git
 New-Item -ItemType SymbolicLink -Path "$env:HOMEPATH\.gitconfig" -Target "$PWD\config\git\.gitconfig" -Force
-
-# Audio Switcher
-# API Request
