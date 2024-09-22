@@ -53,11 +53,11 @@ winget install --id GitHub.cli --silent
 winget install --id JanDeDobbeleer.OhMyPosh --silent
 winget install --id junegunn.fzf --silent
 winget install --id Microsoft.PowerToys --silent
-winget install --id WinMerge.WinMerge --silent
+winget install --id ScooterSoftware.BeyondCompare5 --silent
 winget install --id Microsoft.AzureDataStudio --silent
 winget install --id Postman.Postman
 winget install --id CoreyButler.NVMforWindows --silent
-winget install --id FocusriteAudioEngineeringLtd.FocusriteControl2 --silent
+winget install --id FocusriteAudioEngineeringLtd.FocusriteControl --silent
 winget install --id AgileBits.1Password --silent
 winget install --id Guru3D.Afterburner --silent
 
@@ -105,3 +105,13 @@ New-Item -ItemType SymbolicLink -Path "$env:APPDATA\Microsoft\Windows\Start Menu
 
 # Git
 New-Item -ItemType SymbolicLink -Path "$env:HOMEPATH\.gitconfig" -Target "$PWD\config\git\.gitconfig" -Force
+
+
+# SignalRGB Settings
+# @echo off
+# reg export HKEY_CURRENT_USER\SOFTWARE\WhirlwindFX\SignalRgb SignalRGB_ALL_Backup.reg
+# reg export HKEY_CURRENT_USER\SOFTWARE\WhirlwindFX\SignalRgb\layouts SignalRGB_Layout_Backup.reg
+# reg export HKEY_CURRENT_USER\SOFTWARE\WhirlwindFX\SignalRgb\devices SignalRGB_Devices_Backup.reg
+# reg export HKEY_CURRENT_USER\SOFTWARE\WhirlwindFX\SignalRgb\lighting SignalRGB_Endpoint_Backup.reg
+# reg export HKEY_CURRENT_USER\SOFTWARE\WhirlwindFX\SignalRgb\MacroBlocks SignalRGB_MacroBlocks_Backup.reg
+# exit
