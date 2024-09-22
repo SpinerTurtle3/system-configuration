@@ -16,4 +16,4 @@ git clone https://github.com/SpinerTurtle3/system-configuration
 
 cd system-configuration
 
-setup.ps1
+.\setup.ps1
